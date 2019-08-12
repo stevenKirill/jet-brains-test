@@ -1,0 +1,31 @@
+.list-item {
+  display: block;
+  position: relative;
+  margin-top: 20px;
+}
+.title:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.title,
+.anchor {
+  font-weight: 400;
+  text-decoration: none;
+  color: black;
+}
+.titleWithArrow {
+  display: inline-block;
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.anchors {
+  list-style-type: none;
+}
+.anchors li {
+  cursor: pointer;
+  padding-left: 15px;
+  margin-top: 8px;
+}
+.element {
+  display: inline;
+  font-weight: 400;
+}
