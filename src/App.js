@@ -1,15 +1,10 @@
 import React, { useState, useEffect } from "react";
-import "./App.css";
-import Node from "./Components/Node/Node.js";
 import { BrowserRouter } from "react-router-dom";
+import Node from "./Components/Node/Node.js";
+import json from './data/HelpTOC.json';
+import "./App.css";
 
 export const PagesContext = React.createContext();
-
-async function getHelpTOC() {
-  const response = await fetch("/HelpTOC.json");
-  const payload = await response.json();
-  return payload;
-};
 
 function App() {
   const [data, setData] = useState(null);
@@ -20,8 +15,7 @@ function App() {
   }, []);
 
   async function handleClick() {
-    const payload = await getHelpTOC();
-    setData(payload);
+    setData(json);
   };
 
   if (data === null) {
