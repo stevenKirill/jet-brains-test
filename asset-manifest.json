@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/jet-brains-test/static/css/main.d4ef88f2.chunk.css",
+    "main.js": "/jet-brains-test/static/js/main.b6095e6c.chunk.js",
+    "main.js.map": "/jet-brains-test/static/js/main.b6095e6c.chunk.js.map",
+    "runtime~main.js": "/jet-brains-test/static/js/runtime~main.7eebf417.js",
+    "runtime~main.js.map": "/jet-brains-test/static/js/runtime~main.7eebf417.js.map",
+    "static/js/2.5e91e6da.chunk.js": "/jet-brains-test/static/js/2.5e91e6da.chunk.js",
+    "static/js/2.5e91e6da.chunk.js.map": "/jet-brains-test/static/js/2.5e91e6da.chunk.js.map",
+    "index.html": "/jet-brains-test/index.html",
+    "precache-manifest.c71a5bb17f10f95a3f4341b61d2c7328.js": "/jet-brains-test/precache-manifest.c71a5bb17f10f95a3f4341b61d2c7328.js",
+    "service-worker.js": "/jet-brains-test/service-worker.js",
+    "static/css/main.d4ef88f2.chunk.css.map": "/jet-brains-test/static/css/main.d4ef88f2.chunk.css.map",
+    "static/media/arrow.svg": "/jet-brains-test/static/media/arrow.29f02f00.svg"
+  }
+}
