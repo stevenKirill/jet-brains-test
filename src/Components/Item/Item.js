@@ -6,28 +6,34 @@ import { PagesContext } from "../../App";
 import { NavLink } from "react-router-dom";
 import { withRouter } from "react-router-dom";
 import arrow from './arrow.svg';
+
 function Item({ pageId, location }) {
   const { pages, anchors, url, setUrl } = useContext(PagesContext);
   const [isOpened, setIsOpened] = useState(false);
+
   function handleClick(event) {
     setIsOpened(prev => !prev);
     if (pages[pageId].url) setUrl(pages[pageId].url);
-  }
+  };
+
   const currentPage = pages[pageId];
-  console.log(currentPage);
+
   const titleClassName = cn("title", {
     titleWithArrow: currentPage.pages
   });
+
   return (
     <li className="list-item">
       <div
         style={{
           backgroundColor: url === pages[pageId].url ? "#F0F0F0" : "inherit"
         }}
+        className="list-item-inner"
       >
-        <img src = {arrow} onClick={ handleClick } className = 'titleWithArrow' style={{
+        <img src={arrow} onClick={ handleClick } className='titleWithArrow' style={{
             transform: isOpened && currentPage.pages ? 'initial' : 'rotate(180deg)'
-            }}/>
+            }}
+        />
         {pages[pageId].url ? (
           <NavLink
             to={`/${pages[pageId].url}`}

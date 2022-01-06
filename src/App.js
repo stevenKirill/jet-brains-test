@@ -9,7 +9,7 @@ async function getHelpTOC() {
   const response = await fetch("/HelpTOC.json");
   const payload = await response.json();
   return payload;
-}
+};
 
 function App() {
   const [data, setData] = useState(null);
@@ -22,7 +22,7 @@ function App() {
   async function handleClick() {
     const payload = await getHelpTOC();
     setData(payload);
-  }
+  };
 
   if (data === null) {
     return (
@@ -35,7 +35,7 @@ function App() {
 
   const { pages, anchors } = data.entities;
   const topLevelIds = data.topLevelIds;
-  console.log(<Node topLevelIds={topLevelIds} pages={pages} />);
+
   return (
     <BrowserRouter>
       <div className="wrapper">

@@ -29,3 +29,11 @@
   display: inline;
   font-weight: 400;
 }
+.list-item-inner {
+  align-items: center;
+  justify-content: flex-start;
+}
+.list-item-inner img {
+  margin-right: 10px;
+  cursor: pointer;
+}
